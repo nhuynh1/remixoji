@@ -1,0 +1,346 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    color: dimgrey;
+    margin: 0;
+  }
+  
+  a {
+    color: black;
+  }
+  
+  header {
+    width: 100%;
+    height: 96px;
+    background-color: #f1f3f2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .social-icons {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  
+  .social-icons svg {
+    margin-left: 10px;
+  /*  fill: black;*/
+    fill: currentColor;
+  }
+  
+  .social-icons svg:hover {
+    fill: dimgray;
+  }
+  
+  .logo-main {
+    background-color: rgba(255,204,77, 1);
+    display: inline-block;
+    width: 270px;
+    height: 125px;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    font-size: 55px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; /* for hand drawn border style */
+    border: solid 2px rgba(255,204,77, 1);
+  }
+  
+  .remix-wrap {
+    display: flex;
+    margin: 80px 10px 10px 10px;
+    align-content: stretch;
+  }
+  
+  svg#remix {
+    width: 500px;
+  /*  height: 500px;*/
+    border: solid 1px rgba(0,0,0, 0.15);
+    border-radius: 2px;
+  }
+  
+  svg#remix > * {
+    cursor: move;
+  }
+  
+  .remix-area {
+    position: relative;
+  }
+  
+  .randomize {
+    position: absolute;
+    top: calc(50% - 35px);
+    left: calc(50% - 35px);
+  }
+  
+  .randomize > button {
+    width: 70px;
+    height: 70px;
+    background-image: url('images/dice.svg');
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .randomize > button:hover {
+    animation: jiggle 0.2s; /*make it jiggle */
+    animation-iteration-count: infinite;
+  }
+  
+  .randomize > button:hover:after {
+    position: absolute;
+    bottom: -30px;
+    left: 0px;
+    content: "Randomize!";
+    width: 100%;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 22px;
+    color: rgba(255,204,77, 1);
+  } 
+  
+  /*** jiggle ****/
+  
+  @keyframes jiggle {
+      0% {
+          transform: rotate(-3deg);
+      }
+      50% {
+          transform: rotate(3deg);
+      }
+  }
+  
+  
+  .download-wrap {
+    position: absolute;
+    top: -50px;
+    right: 0;  
+  }
+  
+  .tools-wrap, .button-wrap, .social-wrap {
+    display: flex;
+    margin: 11px;
+  }
+  
+  .tools-wrap {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0, 0.05);
+  }
+  
+  .button-wrap {
+    flex-direction: row-reverse;
+  }
+  
+  .button-wrap button {
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 25px;
+    color: rgba(255,204,77, 1);
+    background-color: white;
+    padding: 5px 20px;
+    border: solid 1px rgba(255,204,77, 1);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; /* for hand drawn border style */
+    /* https://codemyui.com/hand-drawn-border-buttons-css/ */
+  }
+  
+  .social-wrap {
+    justify-content: center;
+  }
+  
+  .license {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .license p {
+    padding: 0;
+    margin: 0;
+    font-size: 0.75em;
+  }
+  
+  .download {
+    width: 500px;
+  }
+  
+  .download button {
+    background: white;
+    border: solid 1px rgba(0,0,0, 0.2);
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .download span{
+    text-transform: uppercase;
+    font-size: 0.9em;
+  }
+  
+  .social-wrap {
+    font-size: 0.75em;
+  }
+  
+  /***** TABS ******/
+  /*
+  .tabs-container {
+    margin-right: 10px;
+    border: solid 1px rgba(0,0,0, 0.15);
+    border-radius: 2px;
+    flex: 1;
+  }
+  
+  .tabs-container [role="tablist"] {
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
+    display: flex;
+  }
+  
+  .tabs-container [role="tab"] {
+    list-style: none;
+    font-family: 'Amatic SC', sans-serif;
+    font-size: 30px;
+    text-transform: capitalize;
+    padding: 12px 20px;
+    text-align: center;
+    cursor: pointer;
+    flex: 1;
+  }
+  
+  .tabs-container li:hover {
+    background-color: #f1f3f2;
+  }
+  
+  .tabs-container [aria-selected="true"] {
+    border-bottom: solid 3px rgba(255,204,77, 1);
+    color: black;
+    background-color: #f1f3f2;
+  }
+  
+  .tabs-container [aria-expanded="false"] {
+    display: none;
+  }
+  
+  .tabs-container [aria-expanded="true"] {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+  }
+   */
+  /******* download dropdown button *******/
+        .dropdown {
+          position: relative;
+          display: block;
+          width: 189px;
+        }
+        
+        .btn {
+            background-color: #FFCC4D;
+            font-family: 'Amatic SC', sans-serif;
+            font-size: 35px;
+            color: black;
+            padding: 12px;
+            border: none;
+            cursor: pointer;
+            display: inline-block;
+            margin: 0;
+        }
+        
+        .dropbtn:hover, .btn:hover {
+          filter: brightness(1.05);
+        }
+        
+        #download-btn {
+          border-right: 1px solid #fbb300;
+          width: 133px;
+        }
+        
+        #download-extras-btn {
+          width:56px;
+        }
+        
+        .dropdown-content {
+          display: none;
+          width: 100%;
+          background-color: #F1F3F2;
+          position: relative;
+          top: 10px;
+        }
+        
+        .open {
+          display: block;
+        }
+        
+        .dropdown-content:before { /* add arrow (point up) to dropdown */
+          content: ' ';
+          height: 0;
+          position: absolute;
+          width: 0;
+          border: 10px solid transparent; /* arrow size */
+          border-bottom-color: #F1F3F2;  /* arrow color */
+          position: absolute;
+          top: -20px;
+          left: calc(100% - 40px);
+          z-index: 2;
+        }
+        
+        .dropdown-content > a {
+          display: block;
+          background-color: inherit;
+          padding: 10px;
+          font-family: 'Amatic SC', sans-serif;
+          font-size: 24px;
+          text-decoration: none;
+          color: black;
+        }
+        
+        .dropdown-content > a:hover {
+          filter: brightness(0.95);
+        }
+  
+  
+  /*****************/
+  .options {
+    padding: 10px;
+    display: block;
+  }
+  
+  .options > .category {
+  /*  width: 210px;*/
+  /*  border: solid 1px rgba(0,0,0, 0.2);*/
+  /*
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+  */
+    height: calc(500px - 64px);
+    overflow-y: scroll;
+  /*  overflow-x: hidden;*/
+  }
+  
+  .options h2 {
+    width: 100%;
+  }
+  
+  img {
+    width: 100px;
+    margin: 1px;
+    cursor: pointer;
+  }
+  
+  .clear {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border: solid 1px rgba(0,0,0, 0.2);
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }

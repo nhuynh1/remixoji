@@ -1,0 +1,354 @@
+[
+ {
+   "filename": "face_1.svg",
+   "part": "face"
+ },
+ {
+   "filename": "face_2.svg",
+   "part": "face"
+ },
+ {
+   "filename": "face_3.svg",
+   "part": "face"
+ },
+ {
+   "filename": "face_4.svg",
+   "part": "face"
+ },
+ {
+   "filename": "face_5.svg",
+   "part": "face"
+ },
+ {
+   "filename": "face_6.svg",
+   "part": "face"
+ },
+ {
+   "filename": "face_7.svg",
+   "part": "face"
+ },
+ {
+   "filename": "eyes_1.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_10.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_11.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_12.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_13.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_14.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_15.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_16.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_17.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_18.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_19.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_2.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_20.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_21.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_22.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_23.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_24.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_25.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_27.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_28.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_29.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_3.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_30.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_31.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_32.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_33.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_34.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_35.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_36.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_37.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_38.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_39.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_4.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_5.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_6.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_7.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_8.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_9.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "eyes_26.svg",
+   "part": "eyes"
+ },
+ {
+   "filename": "mouth_1.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_2.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_3.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_4.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_5.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_6.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_7.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_8.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_9.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_10.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_11.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_12.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_13.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_14.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_15.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_16.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_17.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_18.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_19.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_20.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_21.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_22.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_23.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_24.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_25.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_26.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_27.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_28.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_29.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_30.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_31.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_32.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_33.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_34.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_35.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_36.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_37.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_38.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_39.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_40.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "mouth_41.svg",
+   "part": "mouth"
+ },
+ {
+   "filename": "extras_1.svg",
+   "part": "extras"
+ }
+]
