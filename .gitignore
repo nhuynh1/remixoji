@@ -23,3 +23,6 @@ public
 
 # Local Netlify folder
 .netlify
+
+# Temporary local archive
+backup/

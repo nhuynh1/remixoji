@@ -1,0 +1,111 @@
+mixin svg(file, index, part)
+    - var xml = file
+    button(id=index, class="add-part" data-part-type=part)
+        svg(
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 36 36"
+            aria-hidden="true"
+            focusable="false"
+            pointer-events="none" 
+            data-part=index
+        )!= xml
+
+doctype html
+html(lang="en")
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        link(href='https://fonts.googleapis.com/css?family=Amatic+SC&display=swap', rel='stylesheet')
+        link(href='https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap', rel='stylesheet')
+        link(rel='stylesheet' href='style.css')
+        title Remixoji | Remix Emojis for Funzies!
+    body
+        header
+            div(class="logo-main") Remixoji
+        div(class="remix-wrap")
+            div(id="options-tabs", class="tabs-container")
+                ul(aria-controls="options-tabs", role="tablist")
+                    li(
+                        role="tab"
+                        tabindex="0"
+                        aria-controls="options-tabs_0"
+                        aria-selected="true"
+                    ) face
+                    li(
+                        role="tab"
+                        tabindex="0"
+                        aria-controls="options-tabs_1"
+                        aria-selected="false"
+                    ) eyes
+                    li(
+                        role="tab"
+                        tabindex="0"
+                        aria-controls="options-tabs_2"
+                        aria-selected="false"
+                    ) mouth
+                    li(
+                        role="tab"
+                        tabindex="0"
+                        aria-controls="options-tabs_3"
+                        aria-selected="false"
+                    ) extras
+                div(class="options")
+                    div(
+                        class="category"
+                        id="options-tabs_0"
+                        role="tabpanel"
+                        aria-expanded="true"
+                    )
+                        h2 Face
+                        div
+                            each part in updatedEmojiParts.face
+                                +svg(part.xml, part.index, part.part)
+                    div(
+                        class="category"
+                        id="options-tabs_1"
+                        role="tabpanel"
+                        aria-expanded="false"
+                    )
+                        h2 Eyes
+                        div
+                            each part in updatedEmojiParts.eyes
+                                +svg(part.xml, part.index, part.part)
+                    div(
+                        class="category"
+                        id="options-tabs_2"
+                        role="tabpanel"
+                        aria-expanded="false"
+                    )
+                        h2 Mouth
+                        div
+                            each part in updatedEmojiParts.mouth
+                                +svg(part.xml, part.index, part.part)
+                    div(
+                        class="category"
+                        id="options-tabs_3"
+                        role="tabpanel"
+                        aria-expanded="false"
+                    )
+                        h2 Extras
+                        div
+                            each part in updatedEmojiParts.extras
+                                +svg(part.xml, part.index, part.part)
+            div(class="remix-area")
+                svg(
+                    id="remix"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 36 36"
+                )
+                div(class="download-wrap")
+                    a(class="download-button", id="download-png") PNG
+                    a(class="download-button", id="download-svg") SVG
+        div(class="button-wrap")
+            button(id="remove-all-parts") Clear
+        div(class="tools-wrap")
+            div(class="license")
+                p License: Creative Commons
+                p Code: Github
+                p Emoji Graphics: Twitter Open Source Emojis
+        div(class="social-wrap")
+            span Made with 💛 in Toronto
+        script(src="script.js")
