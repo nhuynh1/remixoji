@@ -32,8 +32,7 @@ class Remix {
 
 class View {
     constructor() {
-        this.app = document.querySelector('.remix-wrap');
-        this.remixSVG = this.app.querySelector('svg#remix');
+        this.remixSVG = document.querySelector('svg#remix');
         this.clearButton = document.querySelector('#remove-all-parts');
         this.downloadSVG = document.querySelector('#download-svg');
         this.downloadPNG = document.querySelector('#download-png');
@@ -83,8 +82,6 @@ class View {
 
             this.downloadPNG.href = canvas.toDataURL();
             this.downloadPNG.download = `remixedEmoji.${fileType}`;
-            this.downloadButton.href = canvas.toDataURL();
-            this.downloadButton.download = `remixedEmoji.${fileType}`;
         }
     }
 
@@ -95,7 +92,7 @@ class View {
     }
 
     bindAddPart(handler) {
-        this.app.addEventListener('click', (e) => {
+        document.addEventListener('click', (e) => {
             if (e.target.classList.contains('add-part')) {
                 handler(e.target.id, e.target.dataset.partType);
             }
@@ -103,7 +100,7 @@ class View {
     }
 
     bindRemovePart(handler) {
-        this.app.addEventListener('click', (e) => {
+        document.addEventListener('click', (e) => {
             if (e.target.classList.contains('remove-part')) {
                 handler(e.target.dataset.partType);
             }
@@ -160,7 +157,9 @@ const showTab = (id) => {
     const tabs = tabContainer.querySelectorAll('[role="tab"]'),
         tabPanels = tabContainer.querySelectorAll('[role="tabpanel"]'),
         selectedTab = tabContainer.querySelector(`[aria-controls="${id}"]`),
-        selectedTabpanel = tabContainer.querySelector(`#${id}`);
+        selectedTabpanel = document.querySelector(`#${id}`);
+
+    console.log({id, selectedTabpanel})
 
     tabs.forEach(tab => tab.setAttribute('aria-selected', 'false'));
     tabPanels.forEach(tabpanel => tabpanel.setAttribute('aria-expanded', 'false'));

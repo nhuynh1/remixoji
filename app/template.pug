@@ -10,6 +10,16 @@ mixin svg(file, index, part)
             data-part=index
         )!= xml
 
+mixin tab(label, index, selected)
+    li(role="tab", tabindex="0", aria-controls="options-tab_"+ index, aria-selected=selected)= label
+
+mixin tabpabel(label, index, expanded, parts)
+    div(id="options-tab_" + index, role="tabpanel", aria-expanded=expanded)
+        div.category__contents
+            h2(class="sr-only")= label
+            each part in parts
+                +svg(part.xml, part.index, part.part)
+
 doctype html
 html(lang="en")
     head
@@ -20,92 +30,45 @@ html(lang="en")
         link(rel='stylesheet' href='style.css')
         title Remixoji | Remix Emojis for Funzies!
     body
-        header
-            div(class="logo-main") Remixoji
-        div(class="remix-wrap")
-            div(id="options-tabs", class="tabs-container")
-                ul(aria-controls="options-tabs", role="tablist")
-                    li(
-                        role="tab"
-                        tabindex="0"
-                        aria-controls="options-tabs_0"
-                        aria-selected="true"
-                    ) face
-                    li(
-                        role="tab"
-                        tabindex="0"
-                        aria-controls="options-tabs_1"
-                        aria-selected="false"
-                    ) eyes
-                    li(
-                        role="tab"
-                        tabindex="0"
-                        aria-controls="options-tabs_2"
-                        aria-selected="false"
-                    ) mouth
-                    li(
-                        role="tab"
-                        tabindex="0"
-                        aria-controls="options-tabs_3"
-                        aria-selected="false"
-                    ) extras
-                div(class="options")
-                    div(
-                        class="category"
-                        id="options-tabs_0"
-                        role="tabpanel"
-                        aria-expanded="true"
+        div.app-container
+            header.header
+                div.brand Remixoji
+            section
+                div.download
+                    a(class="download-button", id="download-png") 
+                        span.sr-only Download
+                        span.desktop-only PNG
+                    a(class="download-button", id="download-svg")
+                        span.sr-only Download
+                        span.desktop-only SVG
+            div.tabs-svg-wrap
+                main.svg-wrap
+                    svg(
+                        id="remix"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 36 36"
+                        width="36"
+                        height="36"
                     )
-                        h2 Face
-                        div
-                            each part in updatedEmojiParts.face
-                                +svg(part.xml, part.index, part.part)
-                    div(
-                        class="category"
-                        id="options-tabs_1"
-                        role="tabpanel"
-                        aria-expanded="false"
-                    )
-                        h2 Eyes
-                        div
-                            each part in updatedEmojiParts.eyes
-                                +svg(part.xml, part.index, part.part)
-                    div(
-                        class="category"
-                        id="options-tabs_2"
-                        role="tabpanel"
-                        aria-expanded="false"
-                    )
-                        h2 Mouth
-                        div
-                            each part in updatedEmojiParts.mouth
-                                +svg(part.xml, part.index, part.part)
-                    div(
-                        class="category"
-                        id="options-tabs_3"
-                        role="tabpanel"
-                        aria-expanded="false"
-                    )
-                        h2 Extras
-                        div
-                            each part in updatedEmojiParts.extras
-                                +svg(part.xml, part.index, part.part)
-            div(class="remix-area")
-                svg(
-                    id="remix"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 36 36"
-                )
-                div(class="download-wrap")
-                    a(class="download-button", id="download-png") PNG
-                    a(class="download-button", id="download-svg") SVG
-        div(class="button-wrap")
-            button(id="remove-all-parts") Clear
-        div(class="tools-wrap")
-            div(class="license")
-                p License: Creative Commons
-                p Code: Github
-                p Emoji Graphics: Twitter Open Source Emojis
-        div(class="social-wrap")
-            span Made with 💛 in Toronto
-        script(src="script.js")
+                section.tabs-wrap
+                    div.tabs-container#options-tabs
+                        ul(aria-controls="options-tabs", role="tablist")
+                            each category, index in updatedEmojiParts
+                                if (index === 0)
+                                    +tab(category[0], index, 'true')
+                                else
+                                    +tab(category[0], index, 'false')
+                        each category, index in updatedEmojiParts
+                            if (index === 0)
+                                +tabpabel(category[0], index, "true", category[1])
+                            else
+                                +tabpabel(category[0], index, "false", category[1])
+                div.controls
+                    button.controls__button#remove-all-parts
+                        span Remove all
+            footer.footer
+                p Emojis from Twitter Open Source Emojis
+                p Remixes on Instagram | Code on Github
+    script(src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js")
+    script(src="script.js")
+    script(src="script2.js")

@@ -28,6 +28,38 @@
    "part": "face"
  },
  {
+   "filename": "face_8.svg",
+   "part": "face"
+ },
+ {
+  "filename": "face_9.svg",
+  "part": "face"
+},
+{
+  "filename": "face_10.svg",
+  "part": "face"
+},
+{
+  "filename": "face_11.svg",
+  "part": "face"
+},
+{
+  "filename": "face_12.svg",
+  "part": "face"
+},
+{
+  "filename": "face_13.svg",
+  "part": "face"
+},
+{
+  "filename": "face_14.svg",
+  "part": "face"
+},
+{
+  "filename": "face_15.svg",
+  "part": "face"
+},
+ {
    "filename": "eyes_1.svg",
    "part": "eyes"
  },
@@ -159,6 +191,10 @@
    "filename": "eyes_4.svg",
    "part": "eyes"
  },
+ {
+  "filename": "eyes_40.svg",
+  "part": "eyes"
+},
  {
    "filename": "eyes_5.svg",
    "part": "eyes"
@@ -350,5 +386,41 @@
  {
    "filename": "extras_1.svg",
    "part": "extras"
- }
+ },
+ {
+  "filename": "extras_2.svg",
+  "part": "extras"
+},
+{
+  "filename": "extras_3.svg",
+  "part": "extras"
+},
+{
+  "filename": "extras_4.svg",
+  "part": "extras"
+},
+{
+  "filename": "extras_5.svg",
+  "part": "extras"
+},
+{
+  "filename": "extras_6.svg",
+  "part": "extras"
+},
+{
+  "filename": "extras_7.svg",
+  "part": "extras"
+},
+{
+  "filename": "extras_8.svg",
+  "part": "extras"
+},
+{
+  "filename": "extras_9.svg",
+  "part": "extras"
+},
+{
+  "filename": "extras_10.svg",
+  "part": "extras"
+}
 ]
