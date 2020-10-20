@@ -28,7 +28,7 @@ const updatedEmojiParts = emojiParts.map((part) => {
 const compiledFn = pug.compileFile('./app/template.pug');
 const html = compiledFn({ updatedEmojiParts: Object.entries(updatedEmojiParts) });
 
-fs.writeFile('./app/index.html', html, function (error) {
+fs.writeFile('./public/index.html', html, function (error) {
     if (error) {
         return console.error(error);
     }

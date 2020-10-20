@@ -88,7 +88,10 @@ class View {
 
     loadResizeHandler() {
         window.onresize = _.debounce(this.resizeDisplaySVG, 150);
-        this.resizeDisplaySVG();
+        window.onload = () => {
+            console.log(`onload: ${this.remixWrap.offsetHeight}`);
+            this.resizeDisplaySVG();
+        }
     }
     
     loadTabHandler() {
@@ -104,6 +107,7 @@ class View {
             this.remixSVG.style.height = `auto`;
             return;
         }
+        console.log(`resize: ${this.remixWrap.offsetHeight}`);
         this.remixSVG.style.height = 0;
         this.remixSVG.style.height = 
             `${Math.min(this.remixWrap.offsetHeight, this.remixWrap.offsetWidth)}px`;

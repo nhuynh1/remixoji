@@ -25,10 +25,17 @@ doctype html
 html(lang="en")
     head
         meta(charset='UTF-8')
-        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(name="msapplication-TileColor", content="#da532c")
+        meta(name="theme-color", content="#ffffff")
+        link(href="apple-touch-icon.png", rel="apple-touch-icon")
+        link(href="favicon-32x32.png", rel="icon", type="image/png", sizes="32x32")
+        link(href="favicon-16x16.png", rel="icon", type="image/png", sizes="16x16")
+        link(href="site.webmanifest", rel="manifest")
+        link(href="safari-pinned-tab.svg", rel="mask-icon", color="#5bbad5")
         link(href='https://fonts.googleapis.com/css?family=Amatic+SC&display=swap', rel='stylesheet')
         link(href='https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap', rel='stylesheet')
-        link(rel='stylesheet' href='style.css')
+        link(rel='stylesheet', href='style.css')
         title Remixoji | Remix Emojis for Funzies!
     body
         div.app-container
