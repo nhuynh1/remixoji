@@ -1,7 +1,6 @@
 class EmojiPart {
-    constructor(type, src, id) {
+    constructor(type, id) {
         this.type = type;
-        this.src = src;
         this.id = id;
     }
 }
@@ -33,9 +32,37 @@ class Remix {
 class View {
     constructor() {
         this.remixSVG = document.querySelector('svg#remix');
+        this.remixWrap = document.querySelector('main');
         this.clearButton = document.querySelector('#remove-all-parts');
         this.downloadSVG = document.querySelector('#download-svg');
         this.downloadPNG = document.querySelector('#download-png');
+        this.tabsContainer = document.querySelector('#options-tabs');
+        this.tabs = this.tabsContainer.querySelectorAll('[role="tab"]');
+        this.tabPanels = this.tabsContainer.querySelectorAll('[role="tabpanel"]');
+        this.loadTabHandler();
+        this.loadResizeHandler();
+    }
+
+    bindAddPart(handler) {
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('add-part')) {
+                handler(e.target.id, e.target.dataset.partType);
+            }
+        });
+    }
+
+    bindRemoveAllParts(handler) {
+        this.clearButton.addEventListener('click', () => {
+            handler();
+        });
+    }
+    
+    bindRemovePart(handler) {
+        document.addEventListener('click', (e) => {
+            if (e.target.classList.contains('remove-part')) {
+                handler(e.target.dataset.partType);
+            }
+        });
     }
 
     displayRemix(remix) {
@@ -57,6 +84,43 @@ class View {
                 this.remixSVG.append(group);
             }
         });
+    }
+
+    loadResizeHandler() {
+        window.onresize = _.debounce(this.resizeDisplaySVG, 150);
+        this.resizeDisplaySVG();
+    }
+    
+    loadTabHandler() {
+        this.tabsContainer.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (e.target.getAttribute('role') !== 'tab') return;
+            this.showTab(e.target.getAttribute('aria-controls'));
+        });
+    }
+
+    resizeDisplaySVG = () => {
+        if(window.innerWidth >= 900) {
+            this.remixSVG.style.height = `auto`;
+            return;
+        }
+        this.remixSVG.style.height = 0;
+        this.remixSVG.style.height = 
+            `${Math.min(this.remixWrap.offsetHeight, this.remixWrap.offsetWidth)}px`;
+    }
+
+    showTab = (id) => {
+        const selectedTab = this.tabsContainer.querySelector(`[aria-controls="${id}"]`);
+        const selectedTabpanel = this.tabsContainer.querySelector(`#${id}`);
+
+        // set aria-selected and aria-expanded to false
+        this.tabs.forEach(tab => tab.setAttribute('aria-selected', 'false'));
+        this.tabPanels.forEach(tabpanel => tabpanel.setAttribute('aria-expanded', 'false'));
+
+        // set aria-selected and aria-expanded to true for the selected tab and tabpanel
+        selectedTab.setAttribute('aria-selected', 'true');
+        selectedTab.focus();
+        selectedTabpanel.setAttribute('aria-expanded', 'true');
     }
 
     updatePNGDownloadURL() {
@@ -90,29 +154,6 @@ class View {
         this.downloadSVG.href = url;
         this.downloadSVG.download = 'remixedEmoji.svg';
     }
-
-    bindAddPart(handler) {
-        document.addEventListener('click', (e) => {
-            if (e.target.classList.contains('add-part')) {
-                handler(e.target.id, e.target.dataset.partType);
-            }
-        });
-    }
-
-    bindRemovePart(handler) {
-        document.addEventListener('click', (e) => {
-            if (e.target.classList.contains('remove-part')) {
-                handler(e.target.dataset.partType);
-            }
-        });
-    }
-
-    bindRemoveAllParts(handler) {
-        this.clearButton.addEventListener('click', () => {
-            handler();
-        });
-    }
-
 }
 
 class App {
@@ -125,7 +166,7 @@ class App {
     }
 
     handleAddPart = (partID, partType) => {
-        this.remix.addPart(new EmojiPart(partType, '', partID));
+        this.remix.addPart(new EmojiPart(partType, partID));
         this.updateView();
     }
 
@@ -147,31 +188,3 @@ class App {
 }
 
 const app = new App(new Remix(), new View());
-
-
-
-// /* Tabs */
-const tabContainer = document.getElementById('options-tabs');
-
-const showTab = (id) => {
-    const tabs = tabContainer.querySelectorAll('[role="tab"]'),
-        tabPanels = tabContainer.querySelectorAll('[role="tabpanel"]'),
-        selectedTab = tabContainer.querySelector(`[aria-controls="${id}"]`),
-        selectedTabpanel = document.querySelector(`#${id}`);
-
-    console.log({id, selectedTabpanel})
-
-    tabs.forEach(tab => tab.setAttribute('aria-selected', 'false'));
-    tabPanels.forEach(tabpanel => tabpanel.setAttribute('aria-expanded', 'false'));
-    selectedTab.setAttribute("aria-selected", "true");
-    selectedTab.focus();
-    selectedTabpanel.setAttribute("aria-expanded", "true");
-}
-
-const tabContainerClickHandler = (e) => {
-    e.preventDefault();
-    if (e.target.getAttribute('role') !== 'tab') return;
-    showTab(e.target.getAttribute('aria-controls'));
-}
-
-tabContainer.addEventListener('click', tabContainerClickHandler);

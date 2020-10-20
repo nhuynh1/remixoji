@@ -6,7 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:html": "node pug-node.js",
-    "serve": "http-server ./app --port 8000 --cors -c-1",
     "serve:sync": "browser-sync start --server 'app' --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --port 8000"
   },
   "keywords": [
@@ -14,9 +13,7 @@
   ],
   "author": "Nancy Huynh",
   "license": "MIT",
-  "dependencies": {
-    "http-server": "^0.12.3"
-  },
+  "dependencies": {},
   "devDependencies": {
     "browser-sync": "^2.26.12",
     "jsdom": "^16.4.0",

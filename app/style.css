@@ -153,8 +153,8 @@
     padding-bottom: 1rem;
     width: 100%;
   }
-    
-  .add-part {
+  
+  .add-part, .remove-part {
     background: none;
     border: dashed 1px var(--light-grey);
     display: block;
@@ -162,6 +162,12 @@
     margin-right: 0.5rem;
     min-width: 75px;
     width: 75px;
+  }
+
+  .remove-part {
+    font-family: var(--hand-script);
+    font-size: var(--small);
+    padding: 0.25rem;
   }
   
   .controls {

@@ -17,6 +17,7 @@ mixin tabpabel(label, index, expanded, parts)
     div(id="options-tab_" + index, role="tabpanel", aria-expanded=expanded)
         div.category__contents
             h2(class="sr-only")= label
+            button.remove-part(data-part-type=label)= 'Remove ' + label
             each part in parts
                 +svg(part.xml, part.index, part.part)
 
@@ -71,4 +72,3 @@ html(lang="en")
                 p Remixes on Instagram | Code on Github
     script(src="https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js")
     script(src="script.js")
-    script(src="script2.js")
