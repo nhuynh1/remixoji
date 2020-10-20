@@ -15,9 +15,6 @@ node_modules/
 # dotenv environment variable files
 .env*
 
-# Build output
-public
-
 # Mac files
 .DS_Store
 
