@@ -188,8 +188,31 @@
   }
   
   .footer {
+    color: rgba(0,0,0, 0.65);
     font-size: var(--xsmall);
     text-align: center;
+  }
+
+  .footer a {
+    color: inherit;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .footer a::before {
+    background-color: var(--yellow);
+    border-radius: 2px;
+    bottom: 0;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .footer a:hover::before {
+    color: inherit;
+    background-color: currentColor;
   }
   
   @media screen and (min-width: 900px) {
