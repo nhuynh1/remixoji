@@ -13,3 +13,6 @@ There may be an issue with downloading remixed emojis on iOS since some iOS vers
 * This project is a lightweight example of MVC
 * Webpack is used for babel translation and minification
 * Node is used to compile the .pug template
+
+## Build
+``` npm run build ```
