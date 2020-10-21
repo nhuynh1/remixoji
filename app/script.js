@@ -1,3 +1,6 @@
+const debounce = require('lodash/debounce');
+import './style.css';
+
 class EmojiPart {
     constructor(type, id) {
         this.type = type;
@@ -87,9 +90,8 @@ class View {
     }
 
     loadResizeHandler() {
-        window.onresize = _.debounce(this.resizeDisplaySVG, 150);
+        window.onresize = debounce(this.resizeDisplaySVG, 150);
         window.onload = () => {
-            console.log(`onload: ${this.remixWrap.offsetHeight}`);
             this.resizeDisplaySVG();
         }
     }
@@ -107,10 +109,10 @@ class View {
             this.remixSVG.style.height = `auto`;
             return;
         }
-        console.log(`resize: ${this.remixWrap.offsetHeight}`);
         this.remixSVG.style.height = 0;
-        this.remixSVG.style.height = 
-            `${Math.min(this.remixWrap.offsetHeight, this.remixWrap.offsetWidth)}px`;
+        const svgSize = `${Math.min(this.remixWrap.offsetHeight, this.remixWrap.offsetWidth)}px`;
+        this.remixSVG.style.height = svgSize;
+        this.remixSVG.style.width = svgSize;    
     }
 
     showTab = (id) => {
