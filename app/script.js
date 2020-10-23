@@ -17,19 +17,27 @@ class Remix {
         this.emoji.set('extras', undefined);
     }
 
+    bindUpdateView(handler) {
+        this.updateView = handler;
+    }
+
     addPart(part) {
         this.emoji.set(part.type, part.id);
+        this.updateView();
     }
 
     removePart(partType) {
         this.emoji.set(partType, '');
+        this.updateView();
     }
 
     removeAllParts() {
         this.emoji.forEach((value, key) => {
             this.emoji.set(key, undefined);
         });
+        this.updateView();
     }
+
 }
 
 class View {
@@ -166,6 +174,7 @@ class App {
     constructor(remix, view) {
         this.remix = remix;
         this.view = view;
+        this.remix.bindUpdateView(this.handleUpdateView);
         this.view.bindAddPart(this.handleAddPart);
         this.view.bindRemovePart(this.handleRemovePart);
         this.view.bindRemoveAllParts(this.handleRemoveAllParts);
@@ -173,20 +182,17 @@ class App {
 
     handleAddPart = (partID, partType) => {
         this.remix.addPart(new EmojiPart(partType, partID));
-        this.updateView();
     }
 
     handleRemovePart = (partType) => {
         this.remix.removePart(partType);
-        this.updateView();
     }
 
     handleRemoveAllParts = () => {
         this.remix.removeAllParts();
-        this.updateView();
     }
 
-    updateView = () => {
+    handleUpdateView = () => {
         this.view.displayRemix(this.remix);
         this.view.updateSVGDownloadURL();
         this.view.updatePNGDownloadURL();

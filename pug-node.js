@@ -3,7 +3,6 @@ const fs = require('fs');
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
 const emojiParts = require('./app/emojiparts.json');
-// const emojiParts = require('./backup/test.json');
 
 const FILE_PATH = './app/emojiparts/';
 
