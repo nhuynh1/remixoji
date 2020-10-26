@@ -7,7 +7,7 @@ const emojiParts = require('./app/emojiparts.json');
 const FILE_PATH = './app/emojiparts/';
 
 const updatedEmojiParts = emojiParts.map((part) => {
-    const partDescriptor = part.filename.split('.')[0];
+    const id = part.filename.split('.')[0];
     const xml = fs.readFileSync(`${FILE_PATH}${part.filename}`);
     const dom = new JSDOM(xml);
     const childNodes = dom.window.document.querySelector('svg').childNodes;
@@ -18,7 +18,7 @@ const updatedEmojiParts = emojiParts.map((part) => {
     });
 
     const newXML = childNodesText.join('');
-    return {xml: newXML, index: partDescriptor, part: part.part};
+    return {xml: newXML, id, part: part.part, label: part.label};
 }).reduce((sortedParts, part) => {
     sortedParts[part.part] = sortedParts[part.part] ? [...sortedParts[part.part], part] : [part];
     return sortedParts;

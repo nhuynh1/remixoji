@@ -1,13 +1,13 @@
-mixin svg(file, index, part)
+mixin svg(file, id, part, label)
     - var xml = file
-    button(id=index, class="add-part" data-part-type=part)
+    button(id=index, class="add-part" data-part-type=part, aria-label=label)
         svg(
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 36 36"
             aria-hidden="true"
             focusable="false"
             pointer-events="none" 
-            data-part=index
+            data-part=id
         )!= xml
 
 mixin tab(label, index, selected)
@@ -19,7 +19,7 @@ mixin tabpabel(label, index, expanded, parts)
             h2(class="sr-only")= label
             button.remove-part(data-part-type=label)= 'Remove ' + label
             each part in parts
-                +svg(part.xml, part.index, part.part)
+                +svg(part.xml, part.id, part.part, part.label)
 
 doctype html
 html(lang="en")
@@ -77,5 +77,5 @@ html(lang="en")
                         span Remove all
             footer.footer
                 p Emojis from #[a(href="https://twemoji.twitter.com/") Twitter Open Source Emojis]
-                p Remixes on Instagram | #[a(href="https://github.com/nhuynh1/remixoji") Code on Github]
+                p Remixes on #[a(href="https://www.instagram.com/remixoji/") Instagram] | #[a(href="https://github.com/nhuynh1/remixoji") Code on Github]
         script(src="script.js")

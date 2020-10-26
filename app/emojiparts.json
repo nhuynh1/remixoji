@@ -1,426 +1,527 @@
 [
- {
-   "filename": "face_1.svg",
-   "part": "face"
- },
- {
-   "filename": "face_2.svg",
-   "part": "face"
- },
- {
-   "filename": "face_3.svg",
-   "part": "face"
- },
- {
-   "filename": "face_4.svg",
-   "part": "face"
- },
- {
-   "filename": "face_5.svg",
-   "part": "face"
- },
- {
-   "filename": "face_6.svg",
-   "part": "face"
- },
- {
-   "filename": "face_7.svg",
-   "part": "face"
- },
- {
-   "filename": "face_8.svg",
-   "part": "face"
- },
- {
-  "filename": "face_9.svg",
-  "part": "face"
-},
-{
-  "filename": "face_10.svg",
-  "part": "face"
-},
-{
-  "filename": "face_11.svg",
-  "part": "face"
-},
-{
-  "filename": "face_12.svg",
-  "part": "face"
-},
-{
-  "filename": "face_13.svg",
-  "part": "face"
-},
-{
-  "filename": "face_14.svg",
-  "part": "face"
-},
-{
-  "filename": "face_15.svg",
-  "part": "face"
-},
- {
-   "filename": "eyes_1.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_10.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_11.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_12.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_13.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_14.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_15.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_16.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_17.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_18.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_19.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_2.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_20.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_21.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_22.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_23.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_24.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_25.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_27.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_28.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_29.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_3.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_30.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_31.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_32.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_33.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_34.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_35.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_36.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_37.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_38.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_39.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_4.svg",
-   "part": "eyes"
- },
- {
-  "filename": "eyes_40.svg",
-  "part": "eyes"
-},
- {
-   "filename": "eyes_5.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_6.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_7.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_8.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_9.svg",
-   "part": "eyes"
- },
- {
-   "filename": "eyes_26.svg",
-   "part": "eyes"
- },
- {
-   "filename": "mouth_1.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_2.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_3.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_4.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_5.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_6.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_7.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_8.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_9.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_10.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_11.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_12.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_13.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_14.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_15.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_16.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_17.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_18.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_19.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_20.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_21.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_22.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_23.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_24.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_25.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_26.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_27.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_28.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_29.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_30.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_31.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_32.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_33.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_34.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_35.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_36.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_37.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_38.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_39.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_40.svg",
-   "part": "mouth"
- },
- {
-   "filename": "mouth_41.svg",
-   "part": "mouth"
- },
- {
-   "filename": "extras_1.svg",
-   "part": "extras"
- },
- {
-  "filename": "extras_2.svg",
-  "part": "extras"
-},
-{
-  "filename": "extras_3.svg",
-  "part": "extras"
-},
-{
-  "filename": "extras_4.svg",
-  "part": "extras"
-},
-{
-  "filename": "extras_5.svg",
-  "part": "extras"
-},
-{
-  "filename": "extras_6.svg",
-  "part": "extras"
-},
-{
-  "filename": "extras_7.svg",
-  "part": "extras"
-},
-{
-  "filename": "extras_8.svg",
-  "part": "extras"
-},
-{
-  "filename": "extras_9.svg",
-  "part": "extras"
-},
-{
-  "filename": "extras_10.svg",
-  "part": "extras"
-}
+  {
+    "filename": "face_1.svg",
+    "part": "face",
+    "label": "yellow face"
+  },
+  {
+    "filename": "face_5.svg",
+    "part": "face",
+    "label": "yellow face with pink blushes"
+  },
+  {
+    "filename": "face_7.svg",
+    "part": "face",
+    "label": "yellow face with three letter z"
+  },
+  {
+    "filename": "face_8.svg",
+    "part": "face",
+    "label": "yellow face with medical face mask"
+  },
+  {
+    "filename": "face_15.svg",
+    "part": "face",
+    "label": "yellow face with bandages on forehead"
+  },
+  {
+    "filename": "face_12.svg",
+    "part": "face",
+    "label": "yellow face with light blue forehead"
+  },
+  {
+    "filename": "face_13.svg",
+    "part": "face",
+    "label": "yellow face with light blue forehead and two hands to face"
+  },
+  {
+    "filename": "face_3.svg",
+    "part": "face",
+    "label": "two hands to yellow face"
+  },
+  {
+    "filename": "face_4.svg",
+    "part": "face",
+    "label": "halo over yellow face"
+  },
+  {
+    "filename": "face_6.svg",
+    "part": "face",
+    "label": "exploding head face"
+  },
+  {
+    "filename": "face_2.svg",
+    "part": "face",
+    "label": "green face"
+  },
+  {
+    "filename": "face_11.svg",
+    "part": "face",
+    "label": "red face"
+  },
+  {
+    "filename": "face_10.svg",
+    "part": "face",
+    "label": "purple face with devil horns"
+  },
+  {
+    "filename": "face_9.svg",
+    "part": "face",
+    "label": "yellow cat face"
+  },
+  {
+    "filename": "face_14.svg",
+    "part": "face",
+    "label": "two hands to yelllow cat face"
+  },
+  {
+    "filename": "eyes_25.svg",
+    "part": "eyes",
+    "label": "googly eyes"
+  },
+  {
+    "filename": "eyes_1.svg",
+    "part": "eyes",
+    "label": "different sized googly eyes aligned at 45 degree angle"
+  },
+  {
+    "filename": "eyes_40.svg",
+    "part": "eyes",
+    "label": "googly eyes with raised eyebrows"
+  },
+  {
+    "filename": "eyes_11.svg",
+    "part": "eyes",
+    "label": "one googly eye with a wink"
+  },
+  {
+    "filename": "eyes_36.svg",
+    "part": "eyes",
+    "label": "rolling eyes"
+  },
+  {
+    "filename": "eyes_26.svg",
+    "part": "eyes",
+    "label": "eyes wearing glasses"
+  },
+  {
+    "filename": "eyes_10.svg",
+    "part": "eyes",
+    "label": "black sunglasses"
+  },
+  {
+    "filename": "eyes_9.svg",
+    "part": "eyes",
+    "label": "closed content eyes"
+  },
+  {
+    "filename": "eyes_5.svg",
+    "part": "eyes",
+    "label": "closed content eyes at 30 degree angle"
+  },
+  {
+    "filename": "eyes_34.svg",
+    "part": "eyes",
+    "label": "closed eyes shown as two narrow lines"
+  },
+  {
+    "filename": "eyes_13.svg",
+    "part": "eyes",
+    "label": "closed sleepy eyes"
+  },
+  {
+    "filename": "eyes_12.svg",
+    "part": "eyes",
+    "label": "closed upset eyes"
+  },
+  {
+    "filename": "eyes_7.svg",
+    "part": "eyes",
+    "label": "closed upset eyes with eyebrows"
+  },
+  {
+    "filename": "eyes_37.svg",
+    "part": "eyes",
+    "label": "closed content eyes with asymmetrically raised eyebrows"
+  },
+  {
+    "filename": "eyes_38.svg",
+    "part": "eyes",
+    "label": "confused eyes: two different sized eyes with one raised eyebrow and one lowered eyebrow"
+  },
+  {
+    "filename": "eyes_6.svg",
+    "part": "eyes",
+    "label": "different sized eyes with eyebrows of concern"
+  },
+  {
+    "filename": "eyes_31.svg",
+    "part": "eyes",
+    "label": "eyes as stars"
+  },
+  {
+    "filename": "eyes_19.svg",
+    "part": "eyes",
+    "label": "eyes as hearts"
+  },
+  {
+    "filename": "eyes_8.svg",
+    "part": "eyes",
+    "label": "eyes with a monocle and raised eyebrow"
+  },
+  {
+    "filename": "eyes_27.svg",
+    "part": "eyes",
+    "label": "eyes with dollar signs"
+  },
+  {
+    "filename": "eyes_2.svg",
+    "part": "eyes",
+    "label": "eyes shaped like the letter x with raised eyebrows"
+  },
+  {
+    "filename": "eyes_14.svg",
+    "part": "eyes",
+    "label": "eyes sobbing with tears"
+  },
+  {
+    "filename": "eyes_29.svg",
+    "part": "eyes",
+    "label": "eyes with tears of joy on a 45 degree angle"
+  },
+  {
+    "filename": "eyes_21.svg",
+    "part": "eyes",
+    "label": "pleading eyes"
+  },
+  {
+    "filename": "eyes_28.svg",
+    "part": "eyes",
+    "label": "eyes with one eyebrow raised and one eyebrow lowered"
+  },
+  {
+    "filename": "eyes_32.svg",
+    "part": "eyes",
+    "label": "eyes with turned down eyebrows"
+  },
+  {
+    "filename": "eyes_24.svg",
+    "part": "eyes",
+    "label": "eyes very close to turned down eyebrows"
+  },
+  {
+    "filename": "eyes_17.svg",
+    "part": "eyes",
+    "label": "forlorn eyes with eyebrows"
+  },
+  {
+    "filename": "eyes_18.svg",
+    "part": "eyes",
+    "label": "forlorn eyes with eyebrows and a tear"
+  },
+  {
+    "filename": "eyes_16.svg",
+    "part": "eyes",
+    "label": "angry eyes"
+  },
+  {
+    "filename": "eyes_20.svg",
+    "part": "eyes",
+    "label": "angry eyes with sharp eyebrows"
+  },
+  {
+    "filename": "eyes_33.svg",
+    "part": "eyes",
+    "label": "one open eye with raised eyebrow and a winking eye with lowered eyebrow"
+  },
+  {
+    "filename": "eyes_30.svg",
+    "part": "eyes",
+    "label": "two different sized eyes"
+  },
+  {
+    "filename": "eyes_4.svg",
+    "part": "eyes",
+    "label": "small closed content eyes"
+  },
+  {
+    "filename": "eyes_23.svg",
+    "part": "eyes",
+    "label": "squinting eyes"
+  },
+  {
+    "filename": "eyes_35.svg",
+    "part": "eyes",
+    "label": "suspicious squinting eyes with eyebrows"
+  },
+  {
+    "filename": "eyes_39.svg",
+    "part": "eyes",
+    "label": "two open eyes"
+  },
+  {
+    "filename": "eyes_22.svg",
+    "part": "eyes",
+    "label": "very wide eyes"
+  },
+  {
+    "filename": "eyes_15.svg",
+    "part": "eyes",
+    "label": "wide eyes"
+  },
+  {
+    "filename": "eyes_3.svg",
+    "part": "eyes",
+    "label": "wide eyes with raised eyebrows"
+  },
+  {
+    "filename": "mouth_24.svg",
+    "part": "mouth",
+    "label": "closed mouth represented as long horizontal line"
+  },
+  {
+    "filename": "mouth_8.svg",
+    "part": "mouth",
+    "label": "closed mouth represented as short horizontal line"
+  },
+  {
+    "filename": "mouth_40.svg",
+    "part": "mouth",
+    "label": "crumpled mouth"
+  },
+  {
+    "filename": "mouth_15.svg",
+    "part": "mouth",
+    "label": "gritted teeth"
+  },
+  {
+    "filename": "mouth_25.svg",
+    "part": "mouth",
+    "label": "kissing mouth"
+  },
+  {
+    "filename": "mouth_30.svg",
+    "part": "mouth",
+    "label": "large down turned mouth"
+  },
+  {
+    "filename": "mouth_28.svg",
+    "part": "mouth",
+    "label": "very large gaping mouth"
+  },
+  {
+    "filename": "mouth_3.svg",
+    "part": "mouth",
+    "label": "large gaping mouth"
+  },
+  {
+    "filename": "mouth_29.svg",
+    "part": "mouth",
+    "label": "large gaping mouth with teeth"
+  },
+  {
+    "filename": "mouth_16.svg",
+    "part": "mouth",
+    "label": "medium gaping mouth"
+  },
+  {
+    "filename": "mouth_17.svg",
+    "part": "mouth",
+    "label": "small gaping mouth"
+  },
+  {
+    "filename": "mouth_39.svg",
+    "part": "mouth",
+    "label": "gaping mouth with tongue"
+  },
+  {
+    "filename": "mouth_1.svg",
+    "part": "mouth",
+    "label": "mouth with tongue sticking out"
+  },
+  {
+    "filename": "mouth_2.svg",
+    "part": "mouth",
+    "label": "mouth with tongue sticking out at 45 degree angle"
+  },
+  {
+    "filename": "mouth_21.svg",
+    "part": "mouth",
+    "label": "angled mouth with tongue sticking out"
+  },
+  {
+    "filename": "mouth_33.svg",
+    "part": "mouth",
+    "label": "mouth with dollar sign on a green tongue sticking out"
+  },
+  {
+    "filename": "mouth_4.svg",
+    "part": "mouth",
+    "label": "mouth blowing party noisemaker"
+  },
+  {
+    "filename": "mouth_37.svg",
+    "part": "mouth",
+    "label": "mouth with drool"
+  },
+  {
+    "filename": "mouth_18.svg",
+    "part": "mouth",
+    "label": "mouth with fangs"
+  },
+  {
+    "filename": "mouth_32.svg",
+    "part": "mouth",
+    "label": "mouth with thermometer"
+  },
+  {
+    "filename": "mouth_34.svg",
+    "part": "mouth",
+    "label": "small smirking mouth positioned at center of face"
+  },
+  {
+    "filename": "mouth_26.svg",
+    "part": "mouth",
+    "label": "thin turned down smirking mouth"
+  },
+  {
+    "filename": "mouth_11.svg",
+    "part": "mouth",
+    "label": "turned down smirking mouth"
+  },
+  {
+    "filename": "mouth_20.svg",
+    "part": "mouth",
+    "label": "turned up smirking mouth"
+  },
+  {
+    "filename": "mouth_7.svg",
+    "part": "mouth",
+    "label": "turned up mouth"
+  },
+  {
+    "filename": "mouth_31.svg",
+    "part": "mouth",
+    "label": "wide turned up mouth"
+  },
+  {
+    "filename": "mouth_14.svg",
+    "part": "mouth",
+    "label": "very wide turned up mouth"
+  },
+  {
+    "filename": "mouth_6.svg",
+    "part": "mouth",
+    "label": "turned down mouth"
+  },
+  {
+    "filename": "mouth_10.svg",
+    "part": "mouth",
+    "label": "turned down mouth positioned slightly higher"
+  },
+  {
+    "filename": "mouth_9.svg",
+    "part": "mouth",
+    "label": "wide turned down mouth"
+  },
+  {
+    "filename": "mouth_19.svg",
+    "part": "mouth",
+    "label": "wide turned down mouth positioned slightly lower"
+  },
+  {
+    "filename": "mouth_13.svg",
+    "part": "mouth",
+    "label": "very wide turned down mouth"
+  },
+  {
+    "filename": "mouth_22.svg",
+    "part": "mouth",
+    "label": "small slightly turned down mouth"
+  },
+  {
+    "filename": "mouth_36.svg",
+    "part": "mouth",
+    "label": "smile with two teeth sticking out"
+  },
+  {
+    "filename": "mouth_41.svg",
+    "part": "mouth",
+    "label": "smiling mouth with two rows of teeth"
+  },
+  {
+    "filename": "mouth_23.svg",
+    "part": "mouth",
+    "label": "smiling with teeth"
+  },
+  {
+    "filename": "mouth_35.svg",
+    "part": "mouth",
+    "label": "wide smiling mouth with teeth at 45 degree angle"
+  },
+  {
+    "filename": "mouth_5.svg",
+    "part": "mouth",
+    "label": "squiggle mouth"
+  },
+  {
+    "filename": "mouth_12.svg",
+    "part": "mouth",
+    "label": "vomiting mouth"
+  },
+  {
+    "filename": "mouth_38.svg",
+    "part": "mouth",
+    "label": "zipper mouth"
+  },
+  {
+    "filename": "extras_1.svg",
+    "part": "extras",
+    "label": "party hat with confetti"
+  },
+  {
+    "filename": "extras_2.svg",
+    "part": "extras",
+    "label": "cowbow hat"
+  },
+  {
+    "filename": "extras_10.svg",
+    "part": "extras",
+    "label": "medical face mask"
+  },
+  {
+    "filename": "extras_6.svg",
+    "part": "extras",
+    "label": "heart by the mouth area"
+  },
+  {
+    "filename": "extras_7.svg",
+    "part": "extras",
+    "label": "two large puffs of air"
+  },
+  {
+    "filename": "extras_8.svg",
+    "part": "extras",
+    "label": "tissue"
+  },
+  {
+    "filename": "extras_9.svg",
+    "part": "extras",
+    "label": "single tear"
+  },
+  {
+    "filename": "extras_4.svg",
+    "part": "extras",
+    "label": "two tears"
+  },
+  {
+    "filename": "extras_3.svg",
+    "part": "extras",
+    "label": "angled tear"
+  },
+  {
+    "filename": "extras_5.svg",
+    "part": "extras",
+    "label": "sweat represented as drop of water at the top"
+  }
 ]
