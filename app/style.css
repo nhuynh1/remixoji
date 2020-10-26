@@ -1,3 +1,33 @@
+@font-face {
+  font-family: "Amatic SC";
+  src: url('./assets/fonts/amatic_sc/AmaticSC-Regular.woff2') format('woff2'),
+       url('./assets/fonts/amatic_sc/AmaticSC-Regular.woff') format('woff'),
+       url('./assets//fonts/amatic_sc/AmaticSC-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amatic SC";
+  src: url('./assets/fonts/amatic_sc/AmaticSC-Bold.woff2') format('woff2'),
+       url('./assets/fonts/amatic_sc/AmaticSC-Bold.woff') format('woff'),
+       url('./assets/fonts/amatic_sc/AmaticSC-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Permanent Marker";
+  src: url('./assets/fonts/permanentmarker/PermanentMarker-Regular.woff2') format('woff2'),
+       url('./assets/fonts/permanentmarker/PermanentMarker-Regular.woff') format('woff'),
+       url('./assets/fonts/permanentmarker/PermanentMarker-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+}
+
 :root {
     --yellow: #fabe28;
     --light-grey: #eeeeee;
@@ -85,7 +115,7 @@
   }
   
   .download-button {
-    background: url('./assets/save.svg') no-repeat center;
+    background: url('./assets/icons/save.svg') no-repeat center;
     border: none;
     height: 2rem;
     margin-left: 1rem;

@@ -1,6 +1,6 @@
 mixin svg(file, id, part, label)
     - var xml = file
-    button(id=index, class="add-part" data-part-type=part, aria-label=label)
+    button(id=id, class="add-part" data-part-type=part, aria-label=label)
         svg(
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 36 36"
@@ -34,8 +34,6 @@ html(lang="en")
         link(href="favicon-16x16.png", rel="icon", type="image/png", sizes="16x16")
         link(href="site.webmanifest", rel="manifest")
         link(href="safari-pinned-tab.svg", rel="mask-icon", color="#5bbad5")
-        link(href='https://fonts.googleapis.com/css?family=Amatic+SC&display=swap', rel='stylesheet')
-        link(href='https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap', rel='stylesheet')
         link(rel='stylesheet', href='style.css')
         title Remixoji | Remix Emojis for Funzies!
     body

@@ -8,6 +8,7 @@ module.exports = {
     output: {
         filename: 'script.js',
         path: path.resolve(__dirname, 'public'),
+        
     },
     plugins: [
         new MiniCssExtractPlugin({
@@ -41,6 +42,13 @@ module.exports = {
                 options: {
                     limit: 8192,
                 }
+            },
+            {
+                test: /\.(woff|woff2|ttf)$/,
+                loader: 'file-loader',
+                options: {
+                    publicPath: '/',
+                },
             },
         ],
     },
